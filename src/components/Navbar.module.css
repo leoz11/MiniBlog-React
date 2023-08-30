@@ -4,6 +4,11 @@
   align-items: center;
   background-color: #13071a;
   padding: 1em 2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #2a0f3a;
 }
 
 .brand {
@@ -22,6 +27,7 @@
   gap: 1.5em;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 .links_list li {
@@ -63,9 +69,10 @@
 
   .links_list {
     flex-direction: row; /* Alterado para exibir os elementos lado a lado */
-    justify-content: center; /* Centraliza os elementos horizontalmente */
+    justify-content: center;
     gap: 0.5em;
-    margin-top: 0.5em; /* Adiciona espaçamento superior */
+    margin-top: 0.5em;
+    width: 100%; /* Ocupa a largura completa da página */
   }
 
   .brand {

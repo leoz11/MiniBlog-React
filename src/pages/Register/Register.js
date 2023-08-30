@@ -3,6 +3,8 @@ import styles from "./Register.module.css";
 import {useState, useEffect} from 'react';
 import { useAuthentication } from "../../hooks/useAuthentication";
 
+import { Link } from "react-router-dom";
+
 const Register = () => {
     const [displayName, setDisplayName] = useState("");
     const [email, setEmail] = useState("");
@@ -87,6 +89,9 @@ const Register = () => {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 />
             </label>
+            <div>
+                <p>Já tem uma conta? Acesse ela clicando <Link className="link" to="/login">aqui</Link></p>
+            </div>
             {!loading && <button className="btn">Cadastrar</button>}
             {loading && ( 
                 <button className="btn" disabled>

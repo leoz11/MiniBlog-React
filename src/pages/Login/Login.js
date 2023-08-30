@@ -3,6 +3,8 @@ import styles from "./Login.module.css";
 import {useState, useEffect} from 'react';
 import { useAuthentication } from "../../hooks/useAuthentication";
 
+import { Link } from "react-router-dom";
+
 const Login = () => {
 
     const [email, setEmail] = useState("");
@@ -60,6 +62,9 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 />
             </label>
+            <div>
+                <p>Ainda não tem uma conta? Crie uma clicando <Link className="link" to="/register">aqui</Link></p>
+            </div>
             <div className="button">
             {!loading && <button className="btn">Entrar</button>}
             {loading && ( 

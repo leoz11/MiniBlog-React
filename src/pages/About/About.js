@@ -14,7 +14,7 @@ const About = () => {
           Caso queira saber mais sobre mim você pode acessar o meu site clicando no botão abaixo.
         </p>
         <a href="https://leonardo-oliveira.vercel.app" className="btn">
-          Saiba mais...
+          Meu site...
         </a>
     </div>
   );

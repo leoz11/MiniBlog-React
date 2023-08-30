@@ -1,7 +1,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: Roboto, sans-serif;
+  background-color: #13071a;
 }
 
 input::placeholder,
@@ -20,7 +21,7 @@ nav button {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  color: #000;
+  color: rgb(174, 0, 255);
   transition: .4s;
   font-size: 1em;
   cursor: pointer;
@@ -29,10 +30,8 @@ nav button {
 
 a:hover,
 nav button:hover {
-  color: #bbb;
+  color: rgb(170, 0, 162);
 }
-
-/* form styles */
 
 form {
   max-width: 40%;

@@ -1,6 +1,5 @@
 .login {
     text-align: center;
-    background-color: #13071a;
     color: #fff;
     padding: 50px;
     display: flex;
@@ -61,6 +60,10 @@
     background-color: #2f1440;
   }
   
+  .link {
+    color: aqua;
+  }
+
   .login .btn:disabled {
     background-color: #ccc;
     cursor: not-allowed;

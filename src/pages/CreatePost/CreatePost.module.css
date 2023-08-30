@@ -1,12 +1,73 @@
 .create_post {
+    background-color: #13071a;
+    color: #ffffff;
+    padding: 20px;
     text-align: center;
-}
-
-.create_post h2 {
-    font-size: 2.2em;
-}
-
-.create_post p {
-    color: #aaa;
-    margin-bottom: 2em;
-}
+    min-height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create_post h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .create_post p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .create_post form {
+    width: 100%;
+    max-width: 500px; /* Limita a largura do formulário */
+    margin-top: 20px;
+  }
+  
+  .create_post label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  .create_post span {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .create_post input[type="text"],
+  .create_post textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .create_post textarea {
+    resize: vertical;
+  }
+  
+  .create_post button.btn {
+    background-color: #ff8800;
+    color: #13071a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .create_post button.btn:disabled {
+    background-color: #dddddd;
+    cursor: not-allowed;
+  }
+  
+  .create_post p.error {
+    color: #ff0000;
+    margin-top: 10px;
+  }

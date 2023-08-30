@@ -1,7 +1,84 @@
 .login {
     text-align: center;
-}
-
-.login p {
+    background-color: #13071a;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar verticalmente */
+    min-height: 90vh;
+    box-sizing: border-box;
+  }
+  
+  .login h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .login p {
     color: #aaa;
-}
+    margin-bottom: 20px;
+  }
+  
+  .login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .login label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #ddd;
+  }
+  
+  .login span {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .login input {
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    background-color: #37144b;
+    color: #fff;
+  }
+  
+  .login .button,
+  .login .btn {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f1440;
+  }
+  
+  .login .btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .login .btn:hover {
+    background-color: #1a0a1d;
+  }
+  
+  .login .error {
+    color: #ff6b6b;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+  
+    .login input {
+      padding: 15px;
+      font-size: 0.8rem;
+    }
+  }

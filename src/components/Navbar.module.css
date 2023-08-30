@@ -1,73 +1,58 @@
 .navbar {
     display: flex;
-    box-shadow: rgba(0, 0, 0, .15) 0px -2px 10px 0px;
     justify-content: space-between;
     align-items: center;
-    padding: .5em 2em;
-    width: 100%;
-    overflow: hidden;
-    flex-wrap: wrap;
-}
-
-.brand {
-    font-size: 1.2em;
-}
-
-.brand span {
-    font-weight: 900;
-    text-transform: uppercase;
-}
-
-.links_list {
-    display: flex;
+    background-color: #13071a;
+    padding: 1em 2em;   
+  }
+  
+  .brand {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .brand span {
+    color: #e91e63;
+  }
+  
+  .links_list {
     list-style: none;
+    display: flex;
+    gap: 1.5em;
     margin: 0;
     padding: 0;
-}
-
-.links_list li {
-    margin-right: 1em;
-}
-
-.links_list li:last-child {
-    margin-right: 0;
-}
-
-.links_list li a {
-    padding: .4em .6em;
+  }
+  
+  .links_list li {
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .links_list li a {
+    color: #fff;
     text-decoration: none;
-}
-
-.active {
-    background-color: #000;
-    color: #FFF;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        padding: .5em 1em;
-    }
-
-    .links_list {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: #f5f5f5;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: -100%;
-        transition: left 0.3s ease;
-    }
-
-    .navbar.active .links_list {
-        left: 0;
-    }
-
-    .links_list li {
-        margin: 0.5em 1em;
-    }
-
-    .links_list li:last-child {
-        margin-bottom: 1em;
-    }
-}
+    transition: color 0.3s;
+  }
+  
+  .links_list li a:hover {
+    color: #e91e63;
+  }
+  
+  .links_list li button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .links_list li button:hover {
+    color: #e91e63;
+  }
+  
+  .active {
+    background-color: #e91e63;
+    border-radius: 5px;
+    padding: 0.2em 0.5em;
+    color: #fff !important;
+  }

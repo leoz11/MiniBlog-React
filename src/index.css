@@ -1,6 +1,4 @@
-
 body {
-  background-color: #f6fcff;
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -63,16 +61,17 @@ textarea {
 }
 
 .btn {
-  background-color: #1a8918;
+  background-color: #37144b;
   color: #fff;
   text-align: center;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 120px;
   font-weight: bold;
   border: none;
-  padding: 10px 15px;
-  font-size: 1em;
+  padding: 10px;
+  font-size: 1rem;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .btn.btn-dark {
@@ -89,7 +88,7 @@ textarea {
 }
 
 .btn:hover {
-  background-color: #0F730c;
+  background-color: #561c79; 
   color: #fff;
 }
 

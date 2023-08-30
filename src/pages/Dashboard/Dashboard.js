@@ -38,13 +38,13 @@ const Dashboard = () => {
           {posts && posts.map((post) => ( <div key={post.id} className={styles.post_row}>
               <p>{post.title}</p>
               <div>
-                <Link to={`/posts/${post.id}`} className='btn btn-outline'>
+                <Link to={`/posts/${post.id}`} className='btn'>
                   Ver
                 </Link>
-                <Link to={`/posts/edit/${post.id}`} className="btn btn-outline">
+                <Link to={`/posts/edit/${post.id}`} className="btn">
                 Editar
                 </Link>
-                <button onClick={() => deleteDocument(post.id)} className='btn btn-outline btn-danger'>
+                <button onClick={() => deleteDocument(post.id)} className='btn'>
                   Excluir
                 </button>
               </div>

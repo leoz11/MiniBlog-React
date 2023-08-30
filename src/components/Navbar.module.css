@@ -1,58 +1,78 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #13071a;
+  padding: 1em 2em;
+}
+
+.brand {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #e91e63;
+}
+
+.links_list {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.links_list li {
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.links_list li a,
+.links_list li button {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.links_list li a:hover,
+.links_list li button:hover {
+  color: #e91e63;
+}
+
+.links_list li button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #e91e63;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+  color: #fff !important;
+}
+
+/* Estilos para telas menores (responsivo) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
     align-items: center;
-    background-color: #13071a;
-    padding: 1em 2em;   
+    padding: 1em;
   }
-  
-  .brand {
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: none;
-  }
-  
-  .brand span {
-    color: #e91e63;
-  }
-  
+
   .links_list {
-    list-style: none;
-    display: flex;
-    gap: 1.5em;
-    margin: 0;
-    padding: 0;
+    flex-direction: row; /* Alterado para exibir os elementos lado a lado */
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    gap: 0.5em;
+    margin-top: 0.5em; /* Adiciona espaçamento superior */
   }
-  
-  .links_list li {
-    transition: background-color 0.3s, transform 0.3s;
+
+  .brand {
+    margin-bottom: 0.5em;
   }
-  
-  .links_list li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .links_list li a:hover {
-    color: #e91e63;
-  }
-  
-  .links_list li button {
-    background: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .links_list li button:hover {
-    color: #e91e63;
-  }
-  
+
   .active {
-    background-color: #e91e63;
-    border-radius: 5px;
-    padding: 0.2em 0.5em;
-    color: #fff !important;
+    margin-top: 0.5em;
   }
+}
